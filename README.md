@@ -1,7 +1,7 @@
 # React + TypeScript + Vite Course Platform
 
 A simple course platform built with React, TypeScript, and Vite.  
-Includes authentication, course list with mocked data, and video playback.
+Includes authentication, course list with mocked data, and video playback
 
 ## 🚀 Installation and Running
 
