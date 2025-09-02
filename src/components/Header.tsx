@@ -1,8 +1,7 @@
-import { LogOut, User } from 'lucide-react';
+import { LogOut, User } from 'lucide-react'
 import reactLogo from '../assets/react.svg'
 import './Header.css'
-import { useNavigate } from 'react-router';
-
+import { useNavigate } from 'react-router'
 function Header() {
     const navigate = useNavigate()
 
@@ -14,7 +13,7 @@ function Header() {
     return (
         <header>
             <div>
-                <img src={reactLogo} className="logo react" alt="React logo" />
+                <img src={reactLogo} className="logo header-logo react" alt="React logo" />
             </div>
             <div>
                 <User size={30}></User>
@@ -24,4 +23,4 @@ function Header() {
     )
 }
 
-export default Header;
+export default Header

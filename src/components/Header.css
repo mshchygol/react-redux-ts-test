@@ -9,7 +9,7 @@ header {
     box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
 }
 
-.logo {
+.header-logo {
     height: 2em;
     padding: 0;
 }
