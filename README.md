@@ -34,5 +34,7 @@ npm run preview
 - [Lucide React](https://lucide.dev/) – icons
 
 ## 📸 Screenshots
+<img width="2559" height="1193" alt="Screenshot 2025-09-02 153301" src="https://github.com/user-attachments/assets/1b10aeb2-ef82-4b18-86f4-b33ae8812cdd" />
+<img width="2559" height="1123" alt="Screenshot 2025-09-02 153323" src="https://github.com/user-attachments/assets/47ab6de3-cefd-43a5-a321-a67db25c119c" />
 
 
