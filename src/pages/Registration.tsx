@@ -1,5 +1,7 @@
-import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useState } from "react"
+import { useNavigate } from "react-router"
+import reactLogo from '../assets/react.svg'
+import './Registration.css'
 
 interface ValidationErorrs {
     email: string,
@@ -55,6 +57,11 @@ function Registration() {
 
     return (
         <>
+            <div>
+                <a href="https://react.dev" target="_blank">
+                    <img src={reactLogo} className="logo react" alt="React logo" />
+                </a>
+            </div>
             <h1>Welcome!</h1>
             <h2>Please register:</h2>
             <form onSubmit={handleSubmit}>
