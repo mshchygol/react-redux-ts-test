@@ -16,13 +16,13 @@ const courseSlice = createSlice({
         purchaseCourse: (state, action: PayloadAction<string>) => {
             state.purchasedCourses.push(action.payload)
         },
-        testSlice: (state) => {
-            state.purchasedCourses.push('test!' + Math.random())
+        clear: (state) => {
+            state.purchasedCourses = []
         }
     }
 })
 
-export const { purchaseCourse, testSlice } = courseSlice.actions
+export const { purchaseCourse, clear } = courseSlice.actions
 
 export const purchasedCourses = (state: RootState) => state.courses.purchasedCourses
 

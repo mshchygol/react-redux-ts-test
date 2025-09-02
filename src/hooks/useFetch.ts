@@ -23,7 +23,6 @@ export function useFetch<T = unknown>(url: string, options?: UseFetchOptions) {
                 if (!res.ok) {
                     throw new Error(`HTTP error! status: ${res.status}`)
                 }
-                console.log('got response')
                 return res.json() as Promise<T>;
             })
             .then((responseData) => {
