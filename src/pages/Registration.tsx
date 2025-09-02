@@ -56,7 +56,7 @@ function Registration() {
     };
 
     return (
-        <>
+        <section className="registration-section">
             <div>
                 <a href="https://react.dev" target="_blank">
                     <img src={reactLogo} className="logo react" alt="React logo" />
@@ -65,19 +65,19 @@ function Registration() {
             <h1>Welcome!</h1>
             <h2>Please register:</h2>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Email:</label>
-                    <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
-                    {errors.email && <span style={{ color: 'red' }}>{errors.email}</span>}
-                </div>
-                <div>
-                    <label>Password:</label>
-                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                    {errors.password && <span style={{ color: 'red' }}>{errors.password}</span>}
-                </div>
+                {/* <div> */}
+                <label htmlFor="email">Email:</label>
+                <input type="text" id="email" placeholder="Your email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                {errors.email && <p style={{ color: 'red' }}>{errors.email}</p>}
+                {/* </div> */}
+                {/* <div> */}
+                <label htmlFor="password">Password:</label>
+                <input type="password" id="password" placeholder="Your password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                {errors.password && <p style={{ color: 'red' }}>{errors.password}</p>}
+                {/* </div> */}
                 <button type="submit">Register</button>
             </form>
-        </>
+        </section>
     )
 }
 
